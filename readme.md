@@ -6,9 +6,9 @@
 2. Make sure you have Node installed.
 3. npm install
 4. npx tsc -w : For frontend typescript compilation
-5. npm run dev - For frontend 
+5. npm run dev - To run frontend 
 6. cd src/backed npx tsc -w : For backend typescript compilation
-7. node -- inspect index.js —watch - backend
+7. node -- inspect index.js —watch - To run backend
 
 
 ### Additional Details
