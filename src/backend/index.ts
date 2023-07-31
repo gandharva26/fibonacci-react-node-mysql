@@ -52,8 +52,8 @@ function getFibonacci(n: number): Promise<number[]> {
 				console.log(queryError)
 			}
 		
-		// if the database has data add it to the array
-		if (results.length > 0){
+		// if the database has data add it to the array only if 2 or more rows, otherwise we fetch from local
+		if (results.length > 2){
 			results.forEach((result:FibonacciElement, i: number) => 
 			{	
 				fibonacciSeries[i] = result.Value
@@ -89,7 +89,7 @@ async function storeFibonacciInDB(n: number, startValue: number): Promise<void> 
   try {
     const connection = await getConnectionAsync();
     await connection.beginTransaction();
-
+    
     calculateFibonacci(n); // Calculate the Fibonacci series again
    
 
@@ -122,7 +122,8 @@ app.get('/fibonacci', (req, res) => {
 
   getFibonacci(n)
     .then((result) => {
-      res.send(result.splice(0,n));
+     
+      res.send(result.slice(0,n));
     })
     .catch((error) => {
       res.status(500).json({ error: 'Failed to Compute Fibonacci' });
