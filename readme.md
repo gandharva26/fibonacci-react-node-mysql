@@ -4,11 +4,12 @@
 
 1. Clone the repository
 2. Make sure you have Node installed.
-2. npm install
-3. npx tsc -w : For backend & frontend tsc (Compile watch)
-4. node -- inspect index.js —watch - backend
-5. Npm run site - For frontend
-6. node index.js —watch : for Backend Server
+3. npm install
+4. npx tsc -w : For frontend typescript compilation
+5. npm run dev - For frontend 
+6. cd src/backed npx tsc -w : For backend typescript compilation
+7. node -- inspect index.js —watch - backend
+
 
 ### Additional Details
 1. This project uses MySQL on cloud - a free service provided by to host a virtual MySQL database (sql9.freemysqlhosting.net)

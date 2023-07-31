@@ -31,7 +31,7 @@ export const FibonacciResults = () => {
         </div>
       </div>
       <button style={{ display: "block", marginTop: "10px" }}>
-        <Link to='/fibonacci'>
+        <Link to='/'>
           Go back
         </Link>
       </button>
