@@ -3,7 +3,7 @@
 ### Steps to Run
 
 1. Clone the repository
-2. Make sure you have Node installed.
+2. Make sure you have Node and Typescript installed.
 3. npm install
 4. npx tsc -w : For frontend typescript compilation
 5. npm run dev - To run frontend 
