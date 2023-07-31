@@ -14,7 +14,7 @@ export const FibonacciResults = () => {
      
      
         const response = await axios.get(baseUrl + `fibonacci`, { params: { value: location.state['data'] || 0 } });
-        setFibonacciValue(response.data.join(' ')); // Update state with the new value directly
+        setFibonacciValue(response.data.join(',')); // Update state with the new value directly
      
       }
     calculateFibonacci();
