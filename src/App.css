@@ -1,0 +1,150 @@
+
+ul.listing {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+li.dir a {
+  font-weight: 500;
+  display:flex;
+  align-items: center;
+  width:100%;
+  height:100%;
+  color:inherit;
+}
+ul.listing li {
+	list-style:none;
+	padding:5px 10px 5px 10px;
+	margin:0 0 2px 0;
+	cursor:pointer;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	display: flex;
+	align-items: center;
+}
+ul.listing li:hover {
+	background-color:#EEE;
+}
+ul.listing .selected {
+	background-color: #DDD;
+}
+
+li.dir img, li.file img {
+	padding: 0px 5px;
+	width: 20px;
+	max-height: 50px;
+}
+#ppMainPad li span {
+	color:#AAA;
+	display:inline-block;
+	margin-left:10px;
+	font-size:10px;
+}
+.breadcrumb, .searchbar  {
+	margin:10px 0 10px 0;
+	padding:7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	font-size:18px;
+	
+}
+.folder-desc {
+	margin:10px 0 10px 0;
+	padding:7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	font-size:16px;
+	background-color:#EEF;
+}
+
+.searchForm {
+	float:right;
+
+}
+.searchForm input[type=text] {
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	border:none;
+	padding:3px 15px;
+	width:140px;
+	border:1px solid #999;
+}
+
+#details{
+	position: fixed;
+	top: 0px;
+	
+	background: #eee;
+	border: 1px solid #999;
+	width: 350px;
+	height: 100%;
+	padding: 10px;
+	
+	transition-duration: 1s;
+	
+	text-align: left;
+	
+	border-radius: 7px;
+	z-index:99;
+}
+
+
+#details .label {
+	display:inline-block;
+	width: 100px;
+	vertical-align: top;
+	text-align: right;
+	padding: 13px 5px 8px 0px;
+	color:#3875D7;
+}
+#details .data {
+	display:inline-block;
+	width: 240px;
+	vertical-align: top;
+	text-align: left;
+	padding: 8px 0px 8px 5px;
+}
+.div_button {
+	background: #fff;
+	border:1px solid #999;
+	text-align: center;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	padding: 3px;
+}
+.div_button:hover {
+	cursor: pointer;
+}
+.disabled {
+	cursor: not-allowed;
+}
+.a_button {
+	background: #fff;
+	border:1px solid #999;
+	text-align: center;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	padding: 3px 15px;
+}
+.left_margin {
+	margin-left: 25px;
+}
+.right_margin {
+	margin-right: 25px;
+}
+img.center
+{
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+img {
+	max-height: 200px;
+}
